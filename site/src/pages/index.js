@@ -49,11 +49,7 @@ export default function Home() {
         </div>
 
         <div className={styles.heroArt} aria-hidden="true">
-          <div className={styles.glow} />
           <img className={styles.heroImage} src={heroArt} alt="" width="1076" height="1392" />
-          <span className={`${styles.pixel} ${styles.pixelOne}`} />
-          <span className={`${styles.pixel} ${styles.pixelTwo}`} />
-          <span className={`${styles.pixel} ${styles.pixelThree}`} />
         </div>
       </section>
 
