@@ -7,6 +7,7 @@
 ## 2026-08-15
 
 * **Meme Arcade promotional landing**: Replaced the GitHub Pages home with a responsive neon landing that leads to the public App Store listing, includes the approved case-study art, and provides the Lulu case-study book as a secondary destination.
+* **Meme Arcade Pages deployment**: Added a GitHub Actions workflow to build and deploy `site/` to GitHub Pages when `main` changes.
 * **MemeArcade book foundation**: Added the active interior-only publishing journal, canonical manuscript structure, research registry, and evidence records.
 * **Production evidence boundary**: Recorded the generalized private-app responsibility map and companion comparisons without importing private code or product data.
 * **Editorial consolidation**: Adopted the thirteen-chapter MemeArcade structure, six appendices, and ai-on-mac front-matter sequence.
