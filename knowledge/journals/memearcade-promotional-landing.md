@@ -6,7 +6,7 @@ tags: [engineering, github-pages, app-store]
 status: stable
 generated:
   by: clineflow/2.0.0
-  at: 2026-08-16T03:20:00Z
+  at: 2026-08-16T03:30:00Z
 ---
 
 # Goal
@@ -31,7 +31,7 @@ Added a GitHub Actions workflow that builds `site/` on pushes to `main` and depl
 
 ## 2026-08-16 - Hero artwork aspect ratio
 
-Replaced the square hero asset with the supplied 1076 × 1392 portrait artwork and made the image use automatic height with contained object fitting. Removed its decorative rotation so the opaque image canvas no longer creates a tilted panel; the hero displays at its native portrait ratio at every responsive breakpoint.
+Restored the intended 1254 × 1254 square app icon as the hero asset. The hero is now a plain responsive square block; its image fills that block with `object-fit: contain`, with no rotation, glow, overlay, or cropping.
 
 # Decisions
 
@@ -45,7 +45,7 @@ The App Store is the single primary CTA. The book is intentionally secondary, bo
 - The workflow uses Node 20, `npm ci`, the existing production build command, and the official GitHub Pages actions.
 - `npm run build` from `site/` passed after adding the deployment workflow.
 - `npm run build` from `site/` passed after the hero artwork aspect-ratio correction.
-- `npm run build` from `site/` passed after the unrotated native-ratio rendering correction.
+- `npm run build` from `site/` passed after restoring the square-icon rendering.
 
 # Open Issues
 

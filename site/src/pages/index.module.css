@@ -99,7 +99,7 @@
 
 .availability { color: #928dab; font-size: 0.88rem; margin: 1.15rem 0 0; }
 
-.heroArt { height: 560px; justify-self: center; max-width: 500px; min-height: 0; overflow: hidden; width: 100%; }
+.heroArt { aspect-ratio: 1 / 1; justify-self: center; max-width: 500px; width: 100%; }
 .heroImage { display: block; height: 100%; object-fit: contain; width: 100%; }
 
 .experience { padding-bottom: 6rem; padding-top: 4.5rem; }
@@ -124,7 +124,7 @@
 @media (max-width: 760px) {
   .hero { grid-template-columns: 1fr; padding-top: 3.5rem; text-align: center; }
   .heroCopy { display: flex; flex-direction: column; align-items: center; }
-  .heroArt { height: 390px; order: -1; }
+  .heroArt { max-width: 390px; order: -1; }
   .gallery { gap: 1rem; }
   .screenCard:nth-child(2) { margin-top: 1.8rem; }
 }
