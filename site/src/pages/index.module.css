@@ -101,7 +101,7 @@
 
 .heroArt { align-items: center; display: flex; justify-content: center; min-height: 400px; position: relative; }
 .glow { background: radial-gradient(circle, rgb(251 52 227 / 54%) 0, rgb(113 58 255 / 25%) 38%, transparent 70%); height: min(40vw, 460px); position: absolute; width: min(40vw, 460px); }
-.heroImage { filter: drop-shadow(0 25px 36px rgb(0 0 0 / 55%)); flex: 0 0 auto; height: auto; max-height: 560px; max-width: min(100%, 435px); object-fit: contain; position: relative; transform: rotate(5deg); width: 100%; z-index: 1; }
+.heroImage { display: block; filter: drop-shadow(0 25px 36px rgb(0 0 0 / 55%)); flex: 0 0 auto; height: auto; max-height: 560px; max-width: 100%; object-fit: contain; position: relative; width: auto; z-index: 1; }
 .pixel { background: var(--cyan); box-shadow: 0 0 16px var(--cyan); height: 13px; position: absolute; width: 13px; z-index: 2; }
 .pixelOne { right: 6%; top: 18%; }
 .pixelTwo { background: var(--pink); bottom: 22%; left: 3%; box-shadow: 0 0 16px var(--pink); }
@@ -131,7 +131,7 @@
   .heroCopy { display: flex; flex-direction: column; align-items: center; }
   .heroArt { min-height: 300px; order: -1; }
   .glow { height: 330px; width: 330px; }
-  .heroImage { max-height: 390px; max-width: 300px; }
+  .heroImage { max-height: 390px; max-width: 100%; }
   .gallery { gap: 1rem; }
   .screenCard:nth-child(2) { margin-top: 1.8rem; }
 }
