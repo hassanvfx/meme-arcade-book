@@ -6,7 +6,7 @@ tags: [engineering, github-pages, app-store]
 status: stable
 generated:
   by: clineflow/2.0.0
-  at: 2026-08-15T07:00:00Z
+  at: 2026-08-16T03:10:00Z
 ---
 
 # Goal
@@ -29,6 +29,10 @@ Replaced the reader-bridge home with a dark neon promotional landing. It uses th
 
 Added a GitHub Actions workflow that builds `site/` on pushes to `main` and deploys its `site/build` artifact through GitHub Pages. The remote Pages setting still requires a valid GitHub authentication session to select GitHub Actions as its source.
 
+## 2026-08-16 - Hero artwork aspect ratio
+
+Replaced the square hero asset with the supplied 1076 × 1392 portrait artwork and made the image use automatic height with contained object fitting. The hero now preserves its original aspect ratio at every responsive breakpoint.
+
 # Decisions
 
 The App Store is the single primary CTA. The book is intentionally secondary, both beside the hero CTA and in a compact contextual callout. The landing copies only artwork covered by the public reader-bridge approval and makes no claims about private implementation, services, or product metrics. GitHub Pages deploys through Actions because the built site resides in the ignored `site/build` directory, not in a publishable branch root.
@@ -40,10 +44,11 @@ The App Store is the single primary CTA. The book is intentionally secondary, bo
 - `./validate-okf` and `git diff --check` passed.
 - The workflow uses Node 20, `npm ci`, the existing production build command, and the official GitHub Pages actions.
 - `npm run build` from `site/` passed after adding the deployment workflow.
+- `npm run build` from `site/` passed after the hero artwork aspect-ratio correction.
 
 # Open Issues
 
-GitHub CLI authentication for `hassanvfx` is expired, so enabling GitHub Pages remotely remains pending reauthentication.
+None.
 
 # References
 

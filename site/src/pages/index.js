@@ -25,7 +25,7 @@ const screens = [
 ];
 
 export default function Home() {
-  const appIcon = useBaseUrl('/img/memearcade-app-icon.png');
+  const heroArt = useBaseUrl('/img/memearcade-hero.png');
   const caseStudyAssetPath = useBaseUrl('/img/case-study/');
 
   return (
@@ -50,7 +50,7 @@ export default function Home() {
 
         <div className={styles.heroArt} aria-hidden="true">
           <div className={styles.glow} />
-          <img className={styles.appIcon} src={appIcon} alt="" width="627" height="627" />
+          <img className={styles.heroImage} src={heroArt} alt="" width="1076" height="1392" />
           <span className={`${styles.pixel} ${styles.pixelOne}`} />
           <span className={`${styles.pixel} ${styles.pixelTwo}`} />
           <span className={`${styles.pixel} ${styles.pixelThree}`} />

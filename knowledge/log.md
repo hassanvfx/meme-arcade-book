@@ -7,6 +7,8 @@
 ## 2026-08-15
 
 * **Meme Arcade promotional landing**: Replaced the GitHub Pages home with a responsive neon landing that leads to the public App Store listing, includes the approved case-study art, and provides the Lulu case-study book as a secondary destination.
+* **Meme Arcade hero artwork**: Replaced the enlarged hero image with the supplied portrait art and preserved its native aspect ratio through responsive scaling.
+* **Meme Arcade App Store support pages**: Added public GitHub Pages destinations for support, privacy, and terms, with a local-first data disclosure and `hello@waken.ai` support contact.
 * **Meme Arcade Pages deployment**: Added a GitHub Actions workflow to build and deploy `site/` to GitHub Pages when `main` changes.
 * **MemeArcade book foundation**: Added the active interior-only publishing journal, canonical manuscript structure, research registry, and evidence records.
 * **Production evidence boundary**: Recorded the generalized private-app responsibility map and companion comparisons without importing private code or product data.
