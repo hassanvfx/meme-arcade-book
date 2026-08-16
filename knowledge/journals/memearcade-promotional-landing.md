@@ -6,7 +6,7 @@ tags: [engineering, github-pages, app-store]
 status: stable
 generated:
   by: clineflow/2.0.0
-  at: 2026-08-16T03:30:00Z
+  at: 2026-08-16T03:40:00Z
 ---
 
 # Goal
@@ -33,6 +33,10 @@ Added a GitHub Actions workflow that builds `site/` on pushes to `main` and depl
 
 Restored the intended 1254 × 1254 square app icon as the hero asset. The hero is now a plain responsive square block; its image fills that block with `object-fit: contain`, with no rotation, glow, overlay, or cropping.
 
+## 2026-08-16 - Lulu book destination
+
+Updated the book callout to the current Lulu listing and its title, *Modern iOS Architecture: Deconstructing the $3B MemeArcade*.
+
 # Decisions
 
 The App Store is the single primary CTA. The book is intentionally secondary, both beside the hero CTA and in a compact contextual callout. The landing copies only artwork covered by the public reader-bridge approval and makes no claims about private implementation, services, or product metrics. GitHub Pages deploys through Actions because the built site resides in the ignored `site/build` directory, not in a publishable branch root.
@@ -46,6 +50,7 @@ The App Store is the single primary CTA. The book is intentionally secondary, bo
 - `npm run build` from `site/` passed after adding the deployment workflow.
 - `npm run build` from `site/` passed after the hero artwork aspect-ratio correction.
 - `npm run build` from `site/` passed after restoring the square-icon rendering.
+- `npm run build` from `site/` passed after updating the Lulu book destination.
 
 # Open Issues
 

@@ -4,7 +4,7 @@ import useBaseUrl from '@docusaurus/useBaseUrl';
 import styles from './index.module.css';
 
 const APP_STORE_URL = 'https://apps.apple.com/us/app/meme-arcade/id6801929719';
-const BOOK_URL = 'https://www.lulu.com/shop/hassan-uriostegui/ai-from-tensors-to-agents-on-mac-silicon/hardcover/product-e7qy7gy.html';
+const BOOK_URL = 'https://www.lulu.com/shop/hassan-uriostegui/modern-ios-architecture-deconstructing-the-3b-memearcade/hardcover/product-yvewn4y.html?page=1&pageSize=4';
 
 const screens = [
   {
@@ -75,7 +75,7 @@ export default function Home() {
         <p className={styles.eyebrow}>Behind the arcade</p>
         <h2 id="book-title">Explore the Meme Arcade case study.</h2>
         <p>
-          See the iOS architecture and product thinking behind the experience in <em>AI: From Tensors to Agents on Mac Silicon</em>.
+          See the iOS architecture and product thinking behind the experience in <em>Modern iOS Architecture: Deconstructing the $3B MemeArcade</em>.
         </p>
         <a className={styles.bookLink} href={BOOK_URL}>Case Study Book <span aria-hidden="true">↗</span></a>
       </section>
