@@ -1,0 +1,50 @@
+.page {
+  max-width: 760px;
+  margin: 4rem auto;
+  padding: 0 1.25rem 4rem;
+}
+
+.eyebrow, .kicker {
+  color: #29499b;
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  margin: 0 0 0.45rem;
+  text-transform: uppercase;
+}
+
+.subtitle { font-family: Georgia, serif; font-size: 1.45rem; font-style: italic; margin: 0.25rem 0; }
+.byline { color: var(--ifm-color-emphasis-700); }
+.intro { font-size: 1.08rem; line-height: 1.65; margin: 2rem 0; }
+
+.appCard {
+  align-items: center;
+  background: linear-gradient(135deg, #f5f8ff, #fff);
+  border: 1px solid #d7e0f5;
+  border-radius: 20px;
+  display: grid;
+  gap: 1.5rem;
+  grid-template-columns: auto 1fr;
+  padding: 1.5rem;
+}
+
+.appIcon { border-radius: 24%; box-shadow: 0 12px 28px rgb(26 17 84 / 24%); display: block; }
+.appCard h2 { margin: 0 0 0.5rem; }
+.appCard p { line-height: 1.55; margin: 0.4rem 0 1rem; }
+
+.download {
+  background: #29499b;
+  border-radius: 999px;
+  color: #fff;
+  display: inline-block;
+  font-weight: 700;
+  padding: 0.72rem 1.05rem;
+  text-decoration: none;
+}
+.download:hover, .download:focus { background: #173376; color: #fff; text-decoration: none; }
+.note { color: var(--ifm-color-emphasis-700); font-size: 0.88rem; margin-bottom: 0 !important; }
+
+@media (max-width: 520px) {
+  .appCard { grid-template-columns: 1fr; }
+  .appIcon { width: 124px; height: 124px; }
+}

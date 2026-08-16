@@ -1,0 +1,12 @@
+# ClineFlow - per-developer config
+.DS_Store
+.clineflow.local
+cache/
+__pycache__/
+*.py[cod]
+isbn/
+book/build/
+book/assets/qrcodes/
+site/node_modules/
+site/build/
+site/.docusaurus/

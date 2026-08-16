@@ -1,0 +1,17 @@
+# Single source of truth for the Lulu distribution identity used inside the book.
+# Lulu.com owns the assigned ISBN imprint; Waken AI Labs remains the editorial brand.
+title: "Modern iOS Architecture: Deconstructing the $3B MemeArcade"
+subtitle: "Modular Applications with SPM, SwiftUI and Hybrid Web"
+author: "Hassan Uriostegui"
+copyright_holder: "Hassan Uriostegui"
+copyright_year: "2026"
+isbn13: "978-1-105-01722-3"
+imprint: "Lulu.com"
+editorial_brand: "Waken AI Labs"
+edition_statement: "First edition"
+language: "en-US"
+rights: "Copyright © 2026 Hassan Uriostegui. All rights reserved."
+binding: "Paperback perfect bound"
+interior_color: "Color Standard"
+trim_size: "US Trade 6 x 9 in"
+cover_finish: "Matte"

@@ -1,0 +1,41 @@
+{
+  "generated_at": "2026-08-15T23:55:46.206809+00:00",
+  "repositories": [
+    {
+      "name": "GamePlayer",
+      "url": "https://github.com/hassanvfx/GamePlayer.git",
+      "revision": "2e9f314b8f775b2d9564950d1baeb2baa920421b",
+      "cache_path": "cache/repositories/GamePlayer"
+    },
+    {
+      "name": "Pushscheduler",
+      "url": "https://github.com/hassanvfx/Pushscheduler.git",
+      "revision": "b047c4afb43b2a841505859c1d2cf3da11e0cc8e",
+      "cache_path": "cache/repositories/Pushscheduler"
+    },
+    {
+      "name": "receipe-app",
+      "url": "https://github.com/hassanvfx/receipe-app.git",
+      "revision": "51d090c26e1b1b7a89d82264938d06a4b047442b",
+      "cache_path": "cache/repositories/receipe-app"
+    },
+    {
+      "name": "rezona-api",
+      "url": "https://github.com/hassanvfx/rezona-api.git",
+      "revision": "18d700c16ae689588519cd75315b2a7175f2db6b",
+      "cache_path": "cache/repositories/rezona-api"
+    },
+    {
+      "name": "ios-framework",
+      "url": "https://github.com/hassanvfx/ios-framework.git",
+      "revision": "003d168e48b6079205585f117b2553ada80c52d0",
+      "cache_path": "cache/repositories/ios-framework"
+    },
+    {
+      "name": "ios-storage",
+      "url": "https://github.com/hassanvfx/ios-storage.git",
+      "revision": "8e1b791e36719f8079f26b6493fc41b9ff7c6360",
+      "cache_path": "cache/repositories/ios-storage"
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "repositories": [
+    {"name": "GamePlayer", "url": "https://github.com/hassanvfx/GamePlayer.git"},
+    {"name": "Pushscheduler", "url": "https://github.com/hassanvfx/Pushscheduler.git"},
+    {"name": "receipe-app", "url": "https://github.com/hassanvfx/receipe-app.git"},
+    {"name": "rezona-api", "url": "https://github.com/hassanvfx/rezona-api.git"},
+    {"name": "ios-framework", "url": "https://github.com/hassanvfx/ios-framework.git"},
+    {"name": "ios-storage", "url": "https://github.com/hassanvfx/ios-storage.git"}
+  ],
+  "articles": [
+    {"title": "Building Reactive Applications with SwiftUI and Combine", "url": "https://uriostegui.medium.com/building-reactive-applications-with-swiftui-and-combine-a-tutorial-on-ios-app-simple3d-25d18eef7649"},
+    {"title": "SwiftSPM: Instant SPM Tandem Apps", "url": "https://uriostegui.medium.com/swiftspm-instant-spm-tandem-apps-e0b5ca3ef16c"},
+    {"title": "DataStorage: Encrypted Data Persistence for SwiftUI", "url": "https://medium.com/@uriostegui/datastorage-encrypted-data-persistence-for-swiftui-f0187f9f2e40"},
+    {"title": "The Time Apple Featured My App at WWDC14", "url": "https://uriostegui.medium.com/the-time-apple-featured-my-app-at-wwdc14-a42dc4cd19bb"}
+  ],
+  "private_production_source": {"policy": "inspect only in a locally authorized sibling checkout; never record its filesystem location, copy its code, or publish material without explicit approval"}
+}

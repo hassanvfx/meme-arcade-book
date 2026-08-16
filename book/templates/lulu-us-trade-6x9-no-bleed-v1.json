@@ -1,0 +1,15 @@
+{
+  "id": "lulu-us-trade-6x9-no-bleed-v1",
+  "purpose": "Versioned DOCX reference template for the MemeArcade interior only.",
+  "trim_inches": [6, 9],
+  "bleed": false,
+  "margins_inches": {
+    "top": 0.75,
+    "bottom": 0.70,
+    "inside": 0.70,
+    "outside": 0.70,
+    "gutter": 0
+  },
+  "authority": "LibreOffice headless with an isolated temporary profile, followed by committed assembly and Lulu audit scripts.",
+  "excludes": ["exterior cover", "spine", "barcode placement", "cover-wrap production"]
+}

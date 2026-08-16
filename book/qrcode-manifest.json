@@ -1,0 +1,151 @@
+{
+  "branch": "main",
+  "base_url": "https://hassanvfx.github.io/meme-arcade-book/activities",
+  "start_here": {
+    "url": "https://hassanvfx.github.io/meme-arcade-book/",
+    "caption": "Visit the editorial bridge, then open each original public source."
+  },
+  "chapters": [
+    {
+      "id": "01",
+      "title": "What We Can—and Cannot—Deconstruct",
+      "chapter": "book/chapters/01-the-3b-memearcade.md",
+      "source_url": "https://uriostegui.medium.com/the-time-apple-featured-my-app-at-wwdc14-a42dc4cd19bb",
+      "activity": "Read the author-context essay and identify the product constraints that shaped its release.",
+      "expected": "A short note distinguishing author history from claims about MemeArcade, the App.",
+      "evidence": "research/chapter-evidence/01.md"
+    },
+    {
+      "id": "02",
+      "title": "The Native Shell: SwiftUI and Combine",
+      "chapter": "book/chapters/02-native-shell-swiftui-combine.md",
+      "source_url": "https://uriostegui.medium.com/building-reactive-applications-with-swiftui-and-combine-a-tutorial-on-ios-app-simple3d-25d18eef7649",
+      "activity": "Trace a reactive state change from publisher to SwiftUI view.",
+      "expected": "A state-ownership sketch.",
+      "evidence": "research/chapter-evidence/02.md"
+    },
+    {
+      "id": "03",
+      "title": "Modularity as Architecture",
+      "chapter": "book/chapters/03-modularity-spm-ios-frameworks.md",
+      "repository": "ios-framework",
+      "path": "README.md",
+      "source_url": "https://github.com/hassanvfx/ios-framework",
+      "article_url": "https://uriostegui.medium.com/swiftspm-instant-spm-tandem-apps-e0b5ca3ef16c",
+      "activity": "Map a package boundary and the tandem demo-app contract.",
+      "expected": "A dependency-direction sketch.",
+      "evidence": "research/chapter-evidence/03.md"
+    },
+    {
+      "id": "04",
+      "title": "Persistence as Device Infrastructure",
+      "chapter": "book/chapters/04-persistence-datastore.md",
+      "repository": "ios-storage",
+      "path": "README.md",
+      "source_url": "https://github.com/hassanvfx/ios-storage",
+      "article_url": "https://medium.com/@uriostegui/datastorage-encrypted-data-persistence-for-swiftui-f0187f9f2e40",
+      "activity": "Trace observable state through encrypted persistence.",
+      "expected": "A state restoration boundary.",
+      "evidence": "research/chapter-evidence/04.md"
+    },
+    {
+      "id": "05",
+      "title": "Async/Await",
+      "chapter": "book/chapters/05-async-await-production-orchestration.md",
+      "repository": "receipe-app",
+      "path": "README.md",
+      "source_url": "https://github.com/hassanvfx/receipe-app",
+      "activity": "Trace one request, cancellation, and failure state.",
+      "expected": "An async ownership sketch.",
+      "evidence": "research/chapter-evidence/05.md"
+    },
+    {
+      "id": "06",
+      "title": "Observing the Network Boundary",
+      "chapter": "book/chapters/06-network-observation-proxyman.md",
+      "repository": "rezona-api",
+      "path": "README.md",
+      "source_url": "https://github.com/hassanvfx/rezona-api",
+      "activity": "Separate observable client behavior from backend inference.",
+      "expected": "A redacted request model.",
+      "evidence": "research/chapter-evidence/06.md"
+    },
+    {
+      "id": "07",
+      "title": "Two Runtimes, One Application",
+      "chapter": "book/chapters/07-webview-trust-boundary.md",
+      "repository": "GamePlayer",
+      "path": "GamePlayer/MAWebNavigationPolicy.swift",
+      "source_url": "https://github.com/hassanvfx/GamePlayer",
+      "activity": "Build a WebView capability table and define a navigation trust policy.",
+      "expected": "A bounded trust model with explicit native ownership.",
+      "evidence": "research/chapter-evidence/07.md"
+    },
+    {
+      "id": "08",
+      "title": "GamePlayer I",
+      "chapter": "book/chapters/08-gameplayer-native-scrolling-web-gameplay.md",
+      "repository": "GamePlayer",
+      "path": "README.md",
+      "source_url": "https://github.com/hassanvfx/GamePlayer",
+      "activity": "Trace pager ownership, cell reuse, and WebView isolation.",
+      "expected": "A lifecycle sketch with explicit ownership.",
+      "evidence": "research/chapter-evidence/18.md"
+    },
+    {
+      "id": "09",
+      "title": "GamePlayer II",
+      "chapter": "book/chapters/09-gameplayer-lifecycle-economics.md",
+      "repository": "GamePlayer",
+      "path": "README.md",
+      "source_url": "https://github.com/hassanvfx/GamePlayer",
+      "activity": "Measure activation and memory trade-offs before prewarming.",
+      "expected": "A measurement plan.",
+      "evidence": "research/chapter-evidence/09.md"
+    },
+    {
+      "id": "10",
+      "title": "Seeing Across Native and Web",
+      "chapter": "book/chapters/10-observability-native-web.md",
+      "repository": "GamePlayer",
+      "path": "GamePlayer/VerticalPager/MAStagePlayerCell.swift",
+      "source_url": "https://github.com/hassanvfx/GamePlayer",
+      "activity": "Build a privacy-safe lifecycle trace and failure taxonomy.",
+      "expected": "A bounded event vocabulary with recovery categories.",
+      "evidence": "research/chapter-evidence/10.md"
+    },
+    {
+      "id": "11",
+      "title": "Pushscheduler",
+      "chapter": "book/chapters/11-pushscheduler-local-notifications.md",
+      "repository": "Pushscheduler",
+      "path": "README.md",
+      "source_url": "https://github.com/hassanvfx/Pushscheduler",
+      "activity": "Identify permission, persistence, schedule, and routing boundaries.",
+      "expected": "A local-notification state flow.",
+      "evidence": "research/chapter-evidence/11.md"
+    },
+    {
+      "id": "12",
+      "title": "Deconstructing One Complete Session",
+      "chapter": "book/chapters/12-deconstructing-one-session.md",
+      "repository": "GamePlayer",
+      "path": "README.md",
+      "source_url": "https://github.com/hassanvfx/GamePlayer",
+      "activity": "Trace a complete native-to-web-to-native session and assign one owner to every handoff.",
+      "expected": "A responsibility trace with validation and cancellation rules.",
+      "evidence": "research/chapter-evidence/12.md"
+    },
+    {
+      "id": "13",
+      "title": "From MemeArcade to Reusable Architecture",
+      "chapter": "book/chapters/13-reusable-architecture.md",
+      "repository": "ios-framework",
+      "path": "README.md",
+      "source_url": "https://github.com/hassanvfx/ios-framework",
+      "activity": "Propose an extraction with explicit inputs, outputs, lifecycle, forbidden dependencies, fixtures, and product policy that stays outside.",
+      "expected": "A reusable contract with an explicit private and product-specific boundary.",
+      "evidence": "research/chapter-evidence/13.md"
+    }
+  ]
+}
