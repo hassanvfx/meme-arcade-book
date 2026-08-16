@@ -1,41 +1,95 @@
 import React from 'react';
+import Link from '@docusaurus/Link';
+import useBaseUrl from '@docusaurus/useBaseUrl';
 import styles from './index.module.css';
 
 const APP_STORE_URL = 'https://apps.apple.com/us/app/meme-arcade/id6801929719';
+const BOOK_URL = 'https://www.lulu.com/shop/hassan-uriostegui/ai-from-tensors-to-agents-on-mac-silicon/hardcover/product-e7qy7gy.html';
+
+const screens = [
+  {
+    file: 'screenshot-01.png',
+    alt: 'Meme Arcade game screen showing a fast arcade driving game with brake and gas controls.',
+    label: 'Play instantly',
+  },
+  {
+    file: 'screenshot-02.png',
+    alt: 'Meme Arcade discovery screen with a feed of community-made games and categories.',
+    label: 'Discover new favorites',
+  },
+  {
+    file: 'screenshot-03.png',
+    alt: 'Meme Arcade profile screen with play history, favorites, and game cards.',
+    label: 'Track your hype',
+  },
+];
 
 export default function Home() {
+  const appIcon = useBaseUrl('/img/memearcade-app-icon.png');
+  const caseStudyAssetPath = useBaseUrl('/img/case-study/');
+
   return (
     <main className={styles.page}>
-      <p className={styles.eyebrow}>Waken AI Labs</p>
-      <h1>Modern iOS Architecture</h1>
-      <p className={styles.subtitle}>Deconstructing the $3B MemeArcade</p>
-      <p className={styles.byline}>By Hassan Uriostegui · Waken AI Labs</p>
-      <p className={styles.intro}>
-        This site is a reader bridge to the original public repositories and articles behind the book. It does not reproduce the course; use the source activities to study the original work directly.
-      </p>
+      <section className={styles.hero} aria-labelledby="hero-title">
+        <div className={styles.heroCopy}>
+          <p className={styles.eyebrow}>Meme Arcade for iPhone</p>
+          <h1 id="hero-title">Your next favorite game is one scroll away.</h1>
+          <p className={styles.lede}>
+            Discover bite-size games, jump straight into the action, and build your personal arcade.
+          </p>
+          <div className={styles.actions}>
+            <a className={styles.primaryAction} href={APP_STORE_URL}>
+              Download on the App Store <span aria-hidden="true">→</span>
+            </a>
+            <a className={styles.secondaryAction} href={BOOK_URL}>
+              Case Study Book <span aria-hidden="true">↗</span>
+            </a>
+          </div>
+          <p className={styles.availability}>Available on iPhone</p>
+        </div>
 
-      <section className={styles.appCard} aria-labelledby="app-title">
-        <img
-          className={styles.appIcon}
-          src="/meme-arcade-book/img/memearcade-app-icon.png"
-          alt="MemeArcade app icon: neon arcade cabinet with game controls."
-          width="156"
-          height="156"
-        />
-        <div>
-          <p className={styles.kicker}>MemeArcade, the App</p>
-          <h2 id="app-title">Explore the iOS case study</h2>
-          <p>
-            MemeArcade, the App, is the iOS product studied throughout this book: a native shell that orchestrates state, remote gameplay, and device-bound experiences.
-          </p>
-          <a className={styles.download} href={APP_STORE_URL}>
-            Download on the App Store <span aria-hidden="true">→</span>
-          </a>
-          <p className={styles.note}>
-            The $3B framing refers to the broader AI-gaming market, not to the app’s valuation or financing.
-          </p>
+        <div className={styles.heroArt} aria-hidden="true">
+          <div className={styles.glow} />
+          <img className={styles.appIcon} src={appIcon} alt="" width="627" height="627" />
+          <span className={`${styles.pixel} ${styles.pixelOne}`} />
+          <span className={`${styles.pixel} ${styles.pixelTwo}`} />
+          <span className={`${styles.pixel} ${styles.pixelThree}`} />
         </div>
       </section>
+
+      <section className={styles.experience} aria-labelledby="experience-title">
+        <div className={styles.sectionHeading}>
+          <p className={styles.eyebrow}>One arcade, made for your feed</p>
+          <h2 id="experience-title">Play, discover, repeat.</h2>
+          <p>
+            Meme Arcade brings quick games and the culture around them into one lively, scrollable place.
+          </p>
+        </div>
+        <div className={styles.gallery}>
+          {screens.map((screen) => (
+            <figure className={styles.screenCard} key={screen.file}>
+              <img src={`${caseStudyAssetPath}${screen.file}`} alt={screen.alt} loading="lazy" width="1242" height="2688" />
+              <figcaption>{screen.label}</figcaption>
+            </figure>
+          ))}
+        </div>
+      </section>
+
+      <section className={styles.bookCallout} aria-labelledby="book-title">
+        <p className={styles.eyebrow}>Behind the arcade</p>
+        <h2 id="book-title">Explore the Meme Arcade case study.</h2>
+        <p>
+          See the iOS architecture and product thinking behind the experience in <em>AI: From Tensors to Agents on Mac Silicon</em>.
+        </p>
+        <a className={styles.bookLink} href={BOOK_URL}>Case Study Book <span aria-hidden="true">↗</span></a>
+      </section>
+
+      <footer className={styles.footer}>
+        <Link to="/activities/">Source activities</Link>
+        <Link to="/support/">Support</Link>
+        <Link to="/privacy/">Privacy</Link>
+        <Link to="/terms/">Terms</Link>
+      </footer>
     </main>
   );
 }
