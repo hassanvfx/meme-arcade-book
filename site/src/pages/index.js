@@ -5,6 +5,7 @@ import styles from './index.module.css';
 
 const APP_STORE_URL = 'https://apps.apple.com/us/app/meme-arcade/id6801929719';
 const BOOK_URL = 'https://www.lulu.com/shop/hassan-uriostegui/modern-ios-architecture-deconstructing-the-3b-memearcade/hardcover/product-yvewn4y.html?page=1&pageSize=4';
+const EBOOK_URL = 'https://hassanvfx.github.io/website/assets/modern-ios-architecture-memearcade-free-ebook.pdf';
 
 const screens = [
   {
@@ -38,11 +39,16 @@ export default function Home() {
             Discover bite-size games, jump straight into the action, and build your personal arcade.
           </p>
           <div className={styles.actions}>
-            <a className={styles.primaryAction} href={APP_STORE_URL}>
-              Download on the App Store <span aria-hidden="true">→</span>
-            </a>
-            <a className={styles.secondaryAction} href={BOOK_URL}>
-              Case Study Book <span aria-hidden="true">↗</span>
+            <div className={styles.heroActionRow}>
+              <a className={styles.primaryAction} href={APP_STORE_URL}>
+                Download on the App Store <span aria-hidden="true">→</span>
+              </a>
+              <a className={styles.secondaryAction} href={BOOK_URL}>
+                Case Study Printed Edition <span aria-hidden="true">↗</span>
+              </a>
+            </div>
+            <a className={styles.secondaryAction} href={EBOOK_URL}>
+              Free Case Study Ebook <span aria-hidden="true">↗</span>
             </a>
           </div>
           <p className={styles.availability}>Available on iPhone</p>
@@ -77,7 +83,14 @@ export default function Home() {
         <p>
           See the iOS architecture and product thinking behind the experience in <em>Modern iOS Architecture: Deconstructing the $3B MemeArcade</em>.
         </p>
-        <a className={styles.bookLink} href={BOOK_URL}>Case Study Book <span aria-hidden="true">↗</span></a>
+        <div className={styles.bookActions}>
+          <a className={styles.bookLink} href={BOOK_URL}>
+            Case Study Printed Edition <span aria-hidden="true">↗</span>
+          </a>
+          <a className={styles.bookLink} href={EBOOK_URL}>
+            Free Case Study Ebook <span aria-hidden="true">↗</span>
+          </a>
+        </div>
       </section>
 
       <footer className={styles.footer}>

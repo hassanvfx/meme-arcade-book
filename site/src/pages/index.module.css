@@ -66,7 +66,8 @@
   max-width: 540px;
 }
 
-.actions { display: flex; flex-wrap: wrap; gap: 0.85rem; }
+.actions { align-items: flex-start; display: flex; flex-direction: column; gap: 0.85rem; }
+.heroActionRow { display: flex; flex-wrap: wrap; gap: 0.85rem; }
 
 .primaryAction,
 .secondaryAction,
@@ -115,7 +116,7 @@
 
 .bookCallout { background: linear-gradient(110deg, rgb(145 37 232 / 30%), rgb(28 166 255 / 20%)); border: 1px solid rgb(138 101 255 / 42%); border-radius: 30px; margin-bottom: 4rem; padding-bottom: 3.2rem; padding-top: 3.2rem; text-align: center; }
 .bookCallout > p:not(.eyebrow) { max-width: 600px; }
-.bookLink { margin-top: 1.75rem; }
+.bookActions { display: flex; flex-wrap: wrap; gap: 0.85rem; justify-content: center; margin-top: 1.75rem; }
 
 .footer { display: flex; flex-wrap: wrap; gap: 1.1rem 1.5rem; justify-content: center; padding-bottom: 2.5rem; }
 .footer a { color: #afa9c7; font-size: 0.9rem; }
@@ -125,6 +126,7 @@
   .hero { grid-template-columns: 1fr; padding-top: 3.5rem; text-align: center; }
   .heroCopy { display: flex; flex-direction: column; align-items: center; }
   .heroArt { max-width: 390px; order: -1; }
+  .actions { align-items: center; }
   .gallery { gap: 1rem; }
   .screenCard:nth-child(2) { margin-top: 1.8rem; }
 }
@@ -132,8 +134,10 @@
 @media (max-width: 520px) {
   .hero, .experience, .bookCallout, .footer { padding-left: 1rem; padding-right: 1rem; }
   .hero { min-height: auto; padding-bottom: 3.5rem; }
-  .actions { justify-content: center; width: 100%; }
+  .actions, .heroActionRow, .bookActions { width: 100%; }
+  .heroActionRow { justify-content: center; }
   .primaryAction, .secondaryAction { width: 100%; }
+  .bookLink { width: 100%; }
   .gallery { grid-template-columns: 1fr; margin: 0 auto; max-width: 280px; }
   .screenCard:nth-child(2) { margin-top: 0; }
   .bookCallout { border-radius: 22px; margin-left: 1rem; margin-right: 1rem; }

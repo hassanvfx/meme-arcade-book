@@ -4,6 +4,10 @@
 
 * **Initialization**: Created the ClineFlow OKF knowledge bundle.
 
+## 2026-08-17
+
+* **Printed and free ebook CTAs**: Renamed the landing page’s Lulu links to “Case Study Printed Edition” and added matching direct links to the free case-study ebook PDF. The hero gives the ebook its own desktop row; the lower callout places both options side by side on desktop and stacks them on mobile.
+
 ## 2026-08-15
 
 * **Meme Arcade promotional landing**: Replaced the GitHub Pages home with a responsive neon landing that leads to the public App Store listing, includes the approved case-study art, and provides the Lulu case-study book as a secondary destination.

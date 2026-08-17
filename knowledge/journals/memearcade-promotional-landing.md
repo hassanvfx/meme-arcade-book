@@ -6,7 +6,7 @@ tags: [engineering, github-pages, app-store]
 status: stable
 generated:
   by: clineflow/2.0.0
-  at: 2026-08-16T03:40:00Z
+  at: 2026-08-17T01:00:00Z
 ---
 
 # Goal
@@ -37,9 +37,13 @@ Restored the intended 1254 × 1254 square app icon as the hero asset. The hero i
 
 Updated the book callout to the current Lulu listing and its title, *Modern iOS Architecture: Deconstructing the $3B MemeArcade*.
 
+## 2026-08-17 - Printed and free ebook CTAs
+
+Renamed both book CTAs to “Case Study Printed Edition” while retaining the Lulu hardcover URL. Added a direct “Free Case Study Ebook” PDF CTA in both the hero and lower case-study callout. The hero keeps the App Store and printed edition on its first desktop row, with the ebook on a second row; the lower callout is side by side on desktop and stacks on mobile.
+
 # Decisions
 
-The App Store is the single primary CTA. The book is intentionally secondary, both beside the hero CTA and in a compact contextual callout. The landing copies only artwork covered by the public reader-bridge approval and makes no claims about private implementation, services, or product metrics. GitHub Pages deploys through Actions because the built site resides in the ignored `site/build` directory, not in a publishable branch root.
+The App Store is the single primary CTA. The printed edition and free ebook are intentionally secondary, both beside/below the hero CTA and in a compact contextual callout. The landing copies only artwork covered by the public reader-bridge approval and makes no claims about private implementation, services, or product metrics. GitHub Pages deploys through Actions because the built site resides in the ignored `site/build` directory, not in a publishable branch root.
 
 # Testing
 
@@ -51,6 +55,7 @@ The App Store is the single primary CTA. The book is intentionally secondary, bo
 - `npm run build` from `site/` passed after the hero artwork aspect-ratio correction.
 - `npm run build` from `site/` passed after restoring the square-icon rendering.
 - `npm run build` from `site/` passed after updating the Lulu book destination.
+- `npm run build` from `site/` passed after adding the printed-edition and free-ebook CTAs.
 
 # Open Issues
 
