@@ -3,7 +3,9 @@ import Link from '@docusaurus/Link';
 import useBaseUrl from '@docusaurus/useBaseUrl';
 import styles from './index.module.css';
 
-const APP_STORE_URL = 'https://apps.apple.com/us/app/meme-arcade/id6801929719';
+// Roll back to the App Store listing after the TestFlight period:
+// const APP_STORE_URL = 'https://apps.apple.com/us/app/meme-arcade/id6801929719';
+const APP_STORE_URL = 'https://testflight.apple.com/join/QTNgQV4e';
 const BOOK_URL = 'https://www.lulu.com/shop/hassan-uriostegui/modern-ios-architecture-deconstructing-the-3b-memearcade/hardcover/product-yvewn4y.html?page=1&pageSize=4';
 const EBOOK_URL = 'https://hassanvfx.github.io/website/assets/modern-ios-architecture-memearcade-free-ebook.pdf';
 
@@ -41,7 +43,7 @@ export default function Home() {
           <div className={styles.actions}>
             <div className={styles.heroActionRow}>
               <a className={styles.primaryAction} href={APP_STORE_URL}>
-                Download on the App Store <span aria-hidden="true">→</span>
+                <span aria-hidden="true"></span> Get the App
               </a>
               <a className={styles.secondaryAction} href={BOOK_URL}>
                 Case Study Printed Edition <span aria-hidden="true">↗</span>

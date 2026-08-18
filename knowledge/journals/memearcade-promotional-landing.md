@@ -6,7 +6,7 @@ tags: [engineering, github-pages, app-store]
 status: stable
 generated:
   by: clineflow/2.0.0
-  at: 2026-08-17T01:00:00Z
+  at: 2026-08-18T00:00:00Z
 ---
 
 # Goal
@@ -41,9 +41,13 @@ Updated the book callout to the current Lulu listing and its title, *Modern iOS 
 
 Renamed both book CTAs to “Case Study Printed Edition” while retaining the Lulu hardcover URL. Added a direct “Free Case Study Ebook” PDF CTA in both the hero and lower case-study callout. The hero keeps the App Store and printed edition on its first desktop row, with the ebook on a second row; the lower callout is side by side on desktop and stacks on mobile.
 
+## 2026-08-18 - Temporary TestFlight download CTA
+
+Temporarily redirected the primary app-download CTA to the user-supplied TestFlight invite URL, `https://testflight.apple.com/join/QTNgQV4e`, and renamed it to “ Get the App.” The previous public App Store URL remains as a commented source line directly above the temporary URL for a quick rollback.
+
 # Decisions
 
-The App Store is the single primary CTA. The printed edition and free ebook are intentionally secondary, both beside/below the hero CTA and in a compact contextual callout. The landing copies only artwork covered by the public reader-bridge approval and makes no claims about private implementation, services, or product metrics. GitHub Pages deploys through Actions because the built site resides in the ignored `site/build` directory, not in a publishable branch root.
+The app-download destination remains the single primary CTA. It temporarily points to TestFlight during this beta period; the commented App Store URL is the explicit rollback target. The printed edition and free ebook are intentionally secondary, both beside/below the hero CTA and in a compact contextual callout. The landing copies only artwork covered by the public reader-bridge approval and makes no claims about private implementation, services, or product metrics. GitHub Pages deploys through Actions because the built site resides in the ignored `site/build` directory, not in a publishable branch root.
 
 # Testing
 
@@ -56,6 +60,7 @@ The App Store is the single primary CTA. The printed edition and free ebook are 
 - `npm run build` from `site/` passed after restoring the square-icon rendering.
 - `npm run build` from `site/` passed after updating the Lulu book destination.
 - `npm run build` from `site/` passed after adding the printed-edition and free-ebook CTAs.
+- `npm run build` from `site/`, `./validate-okf`, and `git diff --check` passed after the temporary TestFlight CTA update.
 
 # Open Issues
 
