@@ -6,7 +6,7 @@ tags: [engineering, github-pages, app-store]
 status: stable
 generated:
   by: clineflow/2.0.0
-  at: 2026-08-18T01:00:00Z
+  at: 2026-08-18T01:30:00Z
 ---
 
 # Goal
@@ -56,6 +56,14 @@ Added the same centered official download badge to the lower case-study card in 
 ## 2026-08-18 - Bottom-card badge refinement
 
 Moved the lower card’s download CTA below the book links and added generous vertical spacing so it has a distinct final row. It now uses the user-supplied black official Apple lockup; the hero continues to use the existing white lockup.
+
+## 2026-08-18 - Free ebook URL refresh
+
+Updated the shared free-ebook destination to the user-supplied dated PDF URL. Both landing-page ebook CTAs use the shared constant and therefore change together.
+
+## 2026-08-18 - Stable free ebook route
+
+Reverted the landing-page ebook constant to the stable `assets/modern-ios-architecture-memearcade-free-ebook.pdf` route after replacing that file in the separate website publishing repository with the user-supplied dated PDF edition. The public URL is unchanged while it serves the updated 180-page document.
 
 # Decisions
 
