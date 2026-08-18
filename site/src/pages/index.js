@@ -89,12 +89,17 @@ export default function Home() {
           See the iOS architecture and product thinking behind the experience in <em>Modern iOS Architecture: Deconstructing the $3B MemeArcade</em>.
         </p>
         <div className={styles.bookActions}>
-          <a className={styles.bookLink} href={BOOK_URL}>
-            Case Study Printed Edition <span aria-hidden="true">↗</span>
+          <a className={styles.officialDownload} href={APP_STORE_URL} aria-label="Download Meme Arcade">
+            <img className={styles.appStoreBadge} src={appStoreBadge} alt="Download on the App Store" width="180" height="60" />
           </a>
-          <a className={styles.bookLink} href={EBOOK_URL}>
-            Free Case Study Ebook <span aria-hidden="true">↗</span>
-          </a>
+          <div className={styles.bookActionRow}>
+            <a className={styles.bookLink} href={BOOK_URL}>
+              Case Study Printed Edition <span aria-hidden="true">↗</span>
+            </a>
+            <a className={styles.bookLink} href={EBOOK_URL}>
+              Free Case Study Ebook <span aria-hidden="true">↗</span>
+            </a>
+          </div>
         </div>
       </section>
 

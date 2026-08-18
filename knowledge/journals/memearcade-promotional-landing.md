@@ -6,7 +6,7 @@ tags: [engineering, github-pages, app-store]
 status: stable
 generated:
   by: clineflow/2.0.0
-  at: 2026-08-18T00:30:00Z
+  at: 2026-08-18T00:45:00Z
 ---
 
 # Goal
@@ -48,6 +48,10 @@ Temporarily redirected the primary app-download CTA to the user-supplied TestFli
 ## 2026-08-18 - Official badge and CTA hierarchy
 
 Added the user-supplied official Apple download badge as an SVG asset, retaining vector quality and broad modern-browser support. The badge remains the primary TestFlight CTA. On desktop it occupies its own row above the book buttons; “Case Study Printed Edition” uses the existing purple primary treatment beside the outlined “Free Case Study Ebook” CTA. On mobile, the three CTAs stack one per row.
+
+## 2026-08-18 - Bottom-card download CTA
+
+Added the same centered official download badge to the lower case-study card in its own row below the descriptive paragraph and above the existing book links. The badge points to the same temporary TestFlight URL as the hero CTA.
 
 # Decisions
 
