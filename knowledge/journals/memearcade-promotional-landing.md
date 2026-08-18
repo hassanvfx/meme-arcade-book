@@ -6,7 +6,7 @@ tags: [engineering, github-pages, app-store]
 status: stable
 generated:
   by: clineflow/2.0.0
-  at: 2026-08-18T01:30:00Z
+  at: 2026-08-18T18:11:47Z
 ---
 
 # Goal
@@ -65,6 +65,10 @@ Updated the shared free-ebook destination to the user-supplied dated PDF URL. Bo
 
 Reverted the landing-page ebook constant to the stable `assets/modern-ios-architecture-memearcade-free-ebook.pdf` route after replacing that file in the separate website publishing repository with the user-supplied dated PDF edition. The public URL is unchanged while it serves the updated 180-page document.
 
+## 2026-08-18 - Footer activity-link removal
+
+Removed the `Source activities` link from the landing-page footer. The activity pages remain available by direct URL, while the footer now retains only Support, Privacy, and Terms.
+
 # Decisions
 
 The app-download destination remains the single primary CTA. It temporarily points to TestFlight during this beta period; the commented App Store URL is the explicit rollback target. The printed edition and free ebook are intentionally secondary, both beside/below the hero CTA and in a compact contextual callout. The landing copies only artwork covered by the public reader-bridge approval and makes no claims about private implementation, services, or product metrics. GitHub Pages deploys through Actions because the built site resides in the ignored `site/build` directory, not in a publishable branch root.
@@ -78,6 +82,7 @@ The app-download destination remains the single primary CTA. It temporarily poin
 - `npm run build` from `site/` passed after adding the deployment workflow.
 - `npm run build` from `site/` passed after the hero artwork aspect-ratio correction.
 - `npm run build` from `site/` passed after restoring the square-icon rendering.
+- `./validate-okf` and `git diff --check -- site/src/pages/index.js` passed after the footer-link removal.
 - `npm run build` from `site/` passed after updating the Lulu book destination.
 - `npm run build` from `site/` passed after adding the printed-edition and free-ebook CTAs.
 - `npm run build` from `site/`, `./validate-okf`, and `git diff --check` passed after the temporary TestFlight CTA update.

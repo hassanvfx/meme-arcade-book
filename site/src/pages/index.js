@@ -105,7 +105,6 @@ export default function Home() {
       </section>
 
       <footer className={styles.footer}>
-        <Link to="/activities/">Source activities</Link>
         <Link to="/support/">Support</Link>
         <Link to="/privacy/">Privacy</Link>
         <Link to="/terms/">Terms</Link>
