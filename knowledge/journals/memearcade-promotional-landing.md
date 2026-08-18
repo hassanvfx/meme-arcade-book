@@ -6,7 +6,7 @@ tags: [engineering, github-pages, app-store]
 status: stable
 generated:
   by: clineflow/2.0.0
-  at: 2026-08-18T00:45:00Z
+  at: 2026-08-18T01:00:00Z
 ---
 
 # Goal
@@ -52,6 +52,10 @@ Added the user-supplied official Apple download badge as an SVG asset, retaining
 ## 2026-08-18 - Bottom-card download CTA
 
 Added the same centered official download badge to the lower case-study card in its own row below the descriptive paragraph and above the existing book links. The badge points to the same temporary TestFlight URL as the hero CTA.
+
+## 2026-08-18 - Bottom-card badge refinement
+
+Moved the lower card’s download CTA below the book links and added generous vertical spacing so it has a distinct final row. It now uses the user-supplied black official Apple lockup; the hero continues to use the existing white lockup.
 
 # Decisions
 

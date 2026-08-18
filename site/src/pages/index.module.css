@@ -121,6 +121,7 @@
 .bookCallout > p:not(.eyebrow) { max-width: 600px; }
 .bookActions { align-items: center; display: flex; flex-direction: column; gap: 0.85rem; margin-top: 1.75rem; }
 .bookActionRow { display: flex; flex-wrap: wrap; gap: 0.85rem; justify-content: center; }
+.bottomDownload { margin: 1.5rem 0 0.5rem; }
 
 .footer { display: flex; flex-wrap: wrap; gap: 1.1rem 1.5rem; justify-content: center; padding-bottom: 2.5rem; }
 .footer a { color: #afa9c7; font-size: 0.9rem; }

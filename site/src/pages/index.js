@@ -30,6 +30,7 @@ const screens = [
 export default function Home() {
   const appIcon = useBaseUrl('/img/memearcade-app-icon.png');
   const appStoreBadge = useBaseUrl('/img/download-on-the-app-store.svg');
+  const appStoreBlackBadge = useBaseUrl('/img/download-on-the-app-store-black.svg');
   const caseStudyAssetPath = useBaseUrl('/img/case-study/');
 
   return (
@@ -89,9 +90,6 @@ export default function Home() {
           See the iOS architecture and product thinking behind the experience in <em>Modern iOS Architecture: Deconstructing the $3B MemeArcade</em>.
         </p>
         <div className={styles.bookActions}>
-          <a className={styles.officialDownload} href={APP_STORE_URL} aria-label="Download Meme Arcade">
-            <img className={styles.appStoreBadge} src={appStoreBadge} alt="Download on the App Store" width="180" height="60" />
-          </a>
           <div className={styles.bookActionRow}>
             <a className={styles.bookLink} href={BOOK_URL}>
               Case Study Printed Edition <span aria-hidden="true">↗</span>
@@ -100,6 +98,9 @@ export default function Home() {
               Free Case Study Ebook <span aria-hidden="true">↗</span>
             </a>
           </div>
+          <a className={`${styles.officialDownload} ${styles.bottomDownload}`} href={APP_STORE_URL} aria-label="Download Meme Arcade">
+            <img className={styles.appStoreBadge} src={appStoreBlackBadge} alt="Download on the App Store" width="180" height="60" />
+          </a>
         </div>
       </section>
 
