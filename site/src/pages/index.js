@@ -29,6 +29,7 @@ const screens = [
 
 export default function Home() {
   const appIcon = useBaseUrl('/img/memearcade-app-icon.png');
+  const appStoreBadge = useBaseUrl('/img/download-on-the-app-store.svg');
   const caseStudyAssetPath = useBaseUrl('/img/case-study/');
 
   return (
@@ -42,16 +43,18 @@ export default function Home() {
           </p>
           <div className={styles.actions}>
             <div className={styles.heroActionRow}>
-              <a className={styles.primaryAction} href={APP_STORE_URL}>
-                <span aria-hidden="true"></span> Get the App
-              </a>
-              <a className={styles.secondaryAction} href={BOOK_URL}>
-                Case Study Printed Edition <span aria-hidden="true">↗</span>
+              <a className={styles.officialDownload} href={APP_STORE_URL} aria-label="Download Meme Arcade">
+                <img className={styles.appStoreBadge} src={appStoreBadge} alt="Download on the App Store" width="180" height="60" />
               </a>
             </div>
-            <a className={styles.secondaryAction} href={EBOOK_URL}>
-              Free Case Study Ebook <span aria-hidden="true">↗</span>
-            </a>
+            <div className={styles.heroActionRow}>
+              <a className={styles.primaryAction} href={BOOK_URL}>
+                Case Study Printed Edition <span aria-hidden="true">↗</span>
+              </a>
+              <a className={styles.secondaryAction} href={EBOOK_URL}>
+                Free Case Study Ebook <span aria-hidden="true">↗</span>
+              </a>
+            </div>
           </div>
           <p className={styles.availability}>Available on iPhone</p>
         </div>

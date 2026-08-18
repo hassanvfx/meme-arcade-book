@@ -71,6 +71,7 @@
 
 .primaryAction,
 .secondaryAction,
+.officialDownload,
 .bookLink {
   align-items: center;
   border-radius: 999px;
@@ -86,9 +87,11 @@
 
 .primaryAction { background: linear-gradient(100deg, var(--pink), var(--violet)); box-shadow: 0 12px 32px rgb(172 40 255 / 36%); color: #fff; }
 .secondaryAction { border: 1px solid rgb(255 255 255 / 42%); color: var(--ink); }
+.officialDownload { border-radius: 8px; padding: 0; }
+.appStoreBadge { display: block; height: auto; width: 180px; }
 .bookLink { background: #fff; color: #180b36; }
 
-.primaryAction:hover, .primaryAction:focus, .secondaryAction:hover, .secondaryAction:focus, .bookLink:hover, .bookLink:focus {
+.primaryAction:hover, .primaryAction:focus, .secondaryAction:hover, .secondaryAction:focus, .officialDownload:hover, .officialDownload:focus, .bookLink:hover, .bookLink:focus {
   color: inherit;
   text-decoration: none;
   transform: translateY(-2px);
@@ -135,7 +138,8 @@
   .hero, .experience, .bookCallout, .footer { padding-left: 1rem; padding-right: 1rem; }
   .hero { min-height: auto; padding-bottom: 3.5rem; }
   .actions, .heroActionRow, .bookActions { width: 100%; }
-  .heroActionRow { justify-content: center; }
+  .heroActionRow { align-items: stretch; flex-direction: column; justify-content: center; }
+  .officialDownload { align-self: center; width: auto; }
   .primaryAction, .secondaryAction { width: 100%; }
   .bookLink { width: 100%; }
   .gallery { grid-template-columns: 1fr; margin: 0 auto; max-width: 280px; }

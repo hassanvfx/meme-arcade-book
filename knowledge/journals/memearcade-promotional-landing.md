@@ -6,7 +6,7 @@ tags: [engineering, github-pages, app-store]
 status: stable
 generated:
   by: clineflow/2.0.0
-  at: 2026-08-18T00:00:00Z
+  at: 2026-08-18T00:30:00Z
 ---
 
 # Goal
@@ -44,6 +44,10 @@ Renamed both book CTAs to “Case Study Printed Edition” while retaining the L
 ## 2026-08-18 - Temporary TestFlight download CTA
 
 Temporarily redirected the primary app-download CTA to the user-supplied TestFlight invite URL, `https://testflight.apple.com/join/QTNgQV4e`, and renamed it to “ Get the App.” The previous public App Store URL remains as a commented source line directly above the temporary URL for a quick rollback.
+
+## 2026-08-18 - Official badge and CTA hierarchy
+
+Added the user-supplied official Apple download badge as an SVG asset, retaining vector quality and broad modern-browser support. The badge remains the primary TestFlight CTA. On desktop it occupies its own row above the book buttons; “Case Study Printed Edition” uses the existing purple primary treatment beside the outlined “Free Case Study Ebook” CTA. On mobile, the three CTAs stack one per row.
 
 # Decisions
 
